@@ -1,0 +1,22 @@
+{
+  "name": "research-grant-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ResearchGrant Studio — 科研项目申报智能工作台（三阶段：文献调研 / 研究论证 / 申报写作）",
+  "scripts": {
+    "setup": "npm install && cd client && npm install && cd .. && npm run build",
+    "server": "node server/index.js",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "dev:server": "node server/index.js",
+    "dev:client": "cd client && npm run dev"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "cors": "^2.8.5",
+    "docx": "^8.5.0",
+    "express": "^4.21.2",
+    "multer": "^2.0.2",
+    "pdf-parse": "^1.1.1"
+  }
+}
